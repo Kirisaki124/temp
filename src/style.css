@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#app {
+    margin: 0;
+    height: 100%;
+}
+
+.settings-unpin {
+    color: white;
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 250px;
+    min-width: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Black background with opacity */
+    background-color: RGB(70,130,180,0.4) ;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.workspace {
+    background: white;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.settings {
+    background: steelblue;
+    color: white;
+    width: 250px;
+    min-width: 150px;
+}
+
+.divider {
+    background: gray;
+    width: 5px;
+    cursor: ew-resize;
+    flex-shrink: 0;
+}
+
+.main {
+    background: white;
+    flex: 1;
+    overflow: auto;
+}
+
+.commands {
+    background: gray;
+    color: white;
+    flex: 0 0 250px;
+}
