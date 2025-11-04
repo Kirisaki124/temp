@@ -61,3 +61,18 @@ html, body {
     color: white;
     flex: 0 0 250px;
 }
+
+#dragBox {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab; /* Shows it's draggable */
+    /* Initial position (optional) */
+    top: 50px;
+    left: 50px;
+}
